@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nobito</title>
     <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- ********************************nav bar******************************************* -->
     <nav>
-        <div class="main">
-            <ul>
-                <li><a href=""><img src="assets/img/Logo/Default.png" alt="Logo"></a></li>
+        <div class="main flex-row-center">
+            <ul class="flex-row-center">
+                <li><a href=""><img src="assets/img/Logo/Default.png" alt="Logo" style="width: calc(6.25rem + 5vw);"></a></li>
                 <li><a href="">نوبت دهی مطب</a></li>
                 <li><a href="">خدمات <i class="iconsax" icon-name="chevron-down"></i></a></li>
                 <li><a href="">مشاوره آنلاین</a></li>
                 <li><a href="">مجله سلامت</a></li>
-                <li><a href=""><span class="red-circle"></span>نیکوکاری</a></li>
+                <li><a href="" class="circle-nav"><div class="red-circle"></div>نیکوکاری</a></li>
             </ul>
             <div class="registry">
-                <i class="iconsax" icon-name="bell-1"></i>
+                <a href="" class="notification">
+                    <i class="iconsax" icon-name="bell-1"></i>
+                </a>
                 <button>ورود/ثبت نام</button>
             </div>
         </div>
+        <div class="border"></div>
         <div class="menu">
             <div class="social">
                 <i class="iconsax" icon-name="instagram"></i>
@@ -29,7 +34,7 @@
                 <i class="iconsax" icon-name="instagram"></i>
                 <i class="iconsax" icon-name="instagram"></i>
             </div>
-            <div class="links">
+            <div class="links flex-row-center">
                 <a href="">
                     درباره ما
                 </a>
@@ -46,5 +51,27 @@
             </div>
         </div>
     </nav>
+    <!-- **********************************header*********************************** -->
+    <header>
+        <div class="banner">
+            <pre class="main-title"><span class="quotation-highlight">"</span> تلاش ما دسترسی <span class="header-highlight">سریعتر و آسان</span>
+تر شما به خدمات پزشکی است :)
+                                       <span class="quotation-highlight">"</span></pre >
+            <pre class="title2">کافیست خدمات درمانی موردنظر خود را جستجو کنید
+(دریافت نوبت،مشاوره پزشکی،خدمات پزشکی در منزل)</pre>
+        </div>
+        <form action="" class="header-search flex-row-center">
+            <div class="search-bar flex-row-center">
+                <button type="submit">
+                    <i class="iconsax" icon-name="search-normal-2"></i>
+                </button>
+                <input type="text" placeholder="جستجو پزشک،درمانگر،کلینیک...">
+            </div>
+            <button class="city">
+                <i class="iconsax" icon-name="location"></i>
+                انتخاب شهر
+            </button>
+        </form>
+    </header>
 </body>
 </html>
