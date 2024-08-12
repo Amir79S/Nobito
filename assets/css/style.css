@@ -159,7 +159,6 @@ body{
     background-color: #f5f5f5;
 }
 main{
-    gap: 9rem;
     align-items: stretch;
 }
 a{
@@ -410,7 +409,7 @@ header .search-bar button{
     clip-path: polygon(0 0, 98% 0, 100% 100%, 0 100%);
     margin-right: auto;
 }
-/* -------------------- Popular Doctors -------------------- */
+/* -------------------------------------------------------------------------------------------- Popular Doctors -------------------- */
 .title-highlight{
     color: var(--primary-color-500);
 }
@@ -535,6 +534,7 @@ header .search-bar button{
     display: flex;
     align-items: center;
     margin: 0 auto;
+    justify-content: center;
 }
 .slider button{
     width: 40px;
@@ -564,12 +564,14 @@ header .search-bar button{
     height: 0.75rem;
     border-radius: 50%;
     border: 1px solid var(--text-color-02);
+    cursor: pointer;
 }
 .slider ul .selected{
     width: 3rem;
     height: 0.5rem;
     border-radius: 0.25rem;
     background-color: var(--primary-color-500);
+    cursor: auto;
 }
 /* ---------------------------------------------------------- available consultant --------------------------------------- */
 .consultants{
@@ -659,4 +661,350 @@ header .search-bar button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* ----------------------------------------------------------------------------------------------------- figures ----------------------------------------- */
+.figures{
+    gap: var(--paddnig-24);
+    width: 75rem;
+    margin: 8.313rem auto 0;
+}
+.figures div{
+    flex-grow: 1;
+    border-radius: 1.5rem;
+    padding: var(--paddnig-24);
+    position: relative;
+    height: 16.063rem;
+    align-items: start;
+}
+.figures .text{
+    width: 80%;
+    flex-grow: 0;
+}
+.figures div .text h2{
+    font-size: var(--font-size-b-1);
+    font-weight: 700;
+    line-height: 31px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+
+}
+.figures div .text p{
+    font-size: var(--font-size-b-2);
+    font-weight: 400;
+    line-height: 24.8px;
+    text-align: right;
+    color: #e2e2e2;
+}
+.figures .figure1{
+    background: #A8035C;
+}
+.figures .figure2{
+    background: #11749E;
+}
+.figures .figure1 img{
+    position: absolute;
+    object-fit: contain;
+    height: 100%;
+    right: 12rem;
+    bottom: 0;
+}
+.figures .figure2 img{
+    position: absolute;
+    object-fit: contain;
+    height: 100%;
+    right: 11rem;
+    bottom: 0;
+}
+/* --------------------------------------------------------------------------------------------- Popular Clinics ------------------------------ */
+.popular-clinics{
+    width: 75rem;
+    margin: 9.688rem auto 15rem;
+}
+.popular-clinics .title-section{
+    margin-bottom: 3.5rem;
+}
+.popular-clinics .cards{
+    gap: 1.313rem;
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+}
+.popular-clinics .cards .card{
+    width: 17.625rem;
+    height: 25.313rem;
+    background-color: var(--white-color-100);
+    border: 1px solid var(--grey-color-200);
+    padding: var(--padding-16);
+    border-radius: 1rem;
+    flex: 0 0 auto;
+}
+.popular-clinics .cards .card .hashtags{
+    gap: var(--padding-8);
+    margin: 1.5rem auto var(--padding-16);
+    width: 100%;
+    justify-content: center;
+}
+.popular-clinics .cards .card .hashtags li{
+    background-color: var(--grey-color-50);
+    padding: 0.125rem 0.75rem;
+    font-size: var(--font-size-l-2);
+    color: var(--text-color-03);
+    font-weight: 400;
+    border-radius: 24px;
+}
+.popular-clinics .cards .card .location{
+    font-size: var(--font-size-l-1);
+    font-weight: 400;
+    color: var(--text-color-03);
+    gap: var(--padding-8);
+    margin-top: var(--padding-16);
+}
+.popular-clinics .cards .card .name-score{
+    justify-content: space-between;
+    color: var(--text-color-01);
+    font-size: var(--font-size-b-2);
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: right;
+    margin-bottom: 0.75rem;
+}
+.popular-clinics .cards .card .score{
+    color: var(--text-color-02);
+    font-size: var(--font-size-t-3);
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+.popular-clinics .cards .card .score i{
+    color: var(--secondry-color-500);
+}
+.popular-clinics .cards .card figure{
+    height: 9.5rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: var(--padding-16);
+}
+.popular-clinics .cards .card .satisfaction{
+    font-size: var(--font-size-t-3);
+    font-weight: 550;
+    color: var(--primary-color-500);
+    margin-top: var(--paddnig-24);
+}
+.popular-clinics .cards .card .speciality{
+    color: var(--text-color-04);
+    font-size: var(--font-size-t-3);
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+}
+/* ----------------------------------------------------------------------------------------------------------- Insurances ------------------------ */
+.background-color{
+    background-color: var(--primary-color-500);
+    margin-bottom: 9rem;
+    width: 100%;
+}
+.insurances{
+    height: 11.5rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 74.875rem;
+    margin: 0 auto;
+}
+.insurances ul{
+    gap: var(--paddnig-24);
+}
+.insurances ul li{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.insurances figure{
+    height: 27.438rem;
+    align-self: flex-end;
+    display: flex;
+}
+.insurances figure img{
+    height: 90%;
+    width: auto;
+    align-self: flex-end;
+}
+.insurances h1{
+    font-size: var(--font-size-h-1);
+    font-weight: 700;
+    line-height: 49.6px;
+    text-align: right;
+    color: var(--accent-color-500);
+    margin: 0 2.938rem 0 1.563rem;
+}
+/* ------------------------------------------------------------------------------------------------------------ Introduction --------------------- */
+.introduction{
+    padding: 3rem;
+    background-color: var(--white-color-100);
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 74.875rem;
+    margin: 0 auto 9rem;
+}
+.introduction .title{
+    gap: 3rem;
+    margin-bottom: 3.375rem;
+}
+.introduction .title figure{
+    width: 22.625rem;
+    height: 16rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.introduction .title .text{
+    flex-grow: 0;
+}
+.introduction .title .text h1{
+    font-size: var(--font-size-h-1);
+    font-weight: 700;
+    line-height: 49.6px;
+    text-align: right;
+    color: #3B3B3B;
+    margin-bottom: 2rem;
+}
+.introduction .title .text p{
+    color: #757575;
+    font-size: var(--font-size-b-2);
+    font-weight: 500;
+    line-height: 24.8px;
+    text-align: right;
+    margin-bottom: 2.5rem;
+
+}
+.introduction .title .text button{
+    border: 1px solid #757575;
+    border-radius: 0.5rem;
+    padding: var(--padding-8) var(--padding-16);
+    height: 2.5rem;
+    margin-right: auto;
+    color: #757575;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content: center;
+    background-color: transparent;
+}
+.introduction .modules{
+    gap: 4.75rem;
+}
+.introduction .modules li .icon{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.introduction .modules li h1{
+    color: var(--text-color-02);
+    font-size: var(--font-size-t-2);
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 0.75rem;
+}
+.introduction .modules li p{
+    color: var(--text-color-03);
+    font-size: var(--font-size-b-4);
+    font-weight: 400;
+    line-height: 17.28px;
+    text-align: right;
+    color: var(--text-color-03);
+}
+/* ------------------------------------------------------------------------------------------------------- Feedbacks -------------------------------- */
+.feedback .cards{
+    width: 100%;
+    max-width: 93.75rem;
+    margin: 3.5rem auto;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+.feedback .cards li{
+    border: 1px solid #CBCBCB
+}
+.feedback .cards .main{
+    width: 31.625rem;
+    height: 16.25rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.feedback .cards .main .header figure{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+figure{
+    overflow: hidden;
+}
+.feedback .cards .main .header .name{
+    color: #3B3B3B;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.feedback .cards .main .header .date{
+    color: #9C9C9C;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+}
+.feedback .cards .main .header .score{
+    color: #414141;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    gap: 0.25rem;
+    margin-right: auto;
+    align-self: flex-start;
+}
+.iconsax[icon-name=star-slash]{
+    color: #EDB628;
+}
+.feedback .cards .main .comment{
+    color: #757575;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 20.4px;
+    text-align: right;
+    margin: 1.5rem 0 1rem;
+}
+.feedback .cards .main .footer{
+    color: #1F7168;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 20.4px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: auto;
+}
+.feedback .cards .side1{
+    width: 17.063rem;
+    height: 10.5rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+
+}
+.feedback .cards .side2{
+    width: 11rem;
+    height: 6.813rem;
+    border-radius: 0.5rem;
 }
